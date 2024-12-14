@@ -949,7 +949,7 @@ body {
 } */
 
 /* Contact Section Responsive */
-@media ((min-width:200px) and (max-width: 480px)) {
+@media (max-width: 480px) {
     .contact-container {
         width: 90%;
         padding: 1rem;
