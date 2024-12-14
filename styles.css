@@ -545,6 +545,7 @@ nav {
     background: var(--card-bg);
     padding: 2rem 0;
     margin-top: 3rem;
+    width: 100%;
 }
 
 .social-links {
@@ -1044,7 +1045,7 @@ body {
     .skills-grid,
     .projects-container,
     .contact-container,
-    .social-links-container {
+    .social-links {
         width: 90%;
         margin: 0 auto;
         padding: 1.5rem;
