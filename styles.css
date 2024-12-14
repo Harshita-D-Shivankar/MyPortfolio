@@ -315,13 +315,13 @@ nav {
 }
 
 .experience-card h4 {
-    color: var(--text-secondary);
+    /* color: var(--text-primary); */
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
 .experience-card p {
-    color: var(--text-secondary);
+    /* color: var(--text-primary); */
     margin-bottom: 0.5rem;
     line-height: 1.6;
 }
@@ -953,6 +953,8 @@ body {
     .contact-info,
     .contact-form {
         padding: 1rem;
+        margin: 1rem;
+        
     }
 
     .contact-info h3 {
@@ -1044,39 +1046,3 @@ body {
     }
 }
 
-/* Music Button Styles */
-.nav-controls {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.music-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.music-btn:hover {
-    color: var(--primary-color);
-    transform: scale(1.1);
-}
-
-.music-btn.playing {
-    color: var(--primary-color);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
