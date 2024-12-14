@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Sheikh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <div class="background">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-text">
+                    <span>Tech</span>
+                    <span>Sahil</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mode-toggle">
+                <i class='bx bx-moon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Sahil Sheikh</span></h1>
+                    <div class="animated-text">
+                        <span class="profession"></span>
+                    </div>
+                    <p>Crafting digital solutions with Java excellence</p>
+                    <div class="cta-buttons">
+                        <button onclick="location.href='#contact'" class="cta-btn primary-btn">Get in Touch</button>
+                        <button onclick="location.href='#projects'" class="cta-btn primary-btn">View Work</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="blob"></div>
+                    <img src="sahil_dp.png" alt="Sahil Sheikh">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>As a passionate Java Developer, I thrive on transforming complex problems into elegant solutions. With a keen eye for detail and a commitment to clean code, I specialize in building robust backend systems and scalable applications. My journey in software development is driven by an insatiable curiosity and a desire to create technology that makes a meaningful impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <h3>Education</h3>
+            <div class="timeline-item">
+                <div class="date">2023-2025</div>
+                <h4>Master's in Computer Applications</h4>
+                <p>G H Rasioni College of Engineering and Management, Nagpur - 9.81 CGPA</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2020-2023</div>
+                <h4>Bachelor of Science in Computer Science</h4>
+                <p>Dhote Bandhu Science College, Gondia - 8.15 CGPA</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2019-2020</div>
+                <h4>HSC Science</h4>
+                <p>Maharashtra State Board - 84.92%</p>
+            </div>
+            <!-- <div class="timeline-item"></div>
+                <div class="date">2017-2018</div>
+                <h4>SSC </h4>
+                <p>Maharashtra State Board - 83.60%</p>
+            </div> -->
+        </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Java Developer Intern</h3>
+                    <span class="duration">Dec 2024 - Present</span>
+                </div>
+                <h4>MBig.INc</h4>
+                <ul class="responsibilities">
+                    <li>Developing and maintaining Java-based applications using Spring Boot</li>
+                    <li>Collaborating with senior developers on large-scale projects</li>
+                    <li>Implementing RESTful APIs and microservices architecture</li>
+                    <li>Writing clean, maintainable, and efficient code</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-java'></i>
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-data'></i>
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <h3>C++</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>DSA in Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="enote.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Note Application</h3>
+                        <p>Digital note management system built with Java & MySQL</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="github-link"><i class='bx bxl-github'></i></a>
+                            <!-- <a href="https://github.com/Tech-SahilSh/JAVA-Project/tree/main/Enotes2" class="live-link"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="amazon.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Amazon Clone</h3>
+                        <p>Amazon Clone design with HTML & CSS</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tech-SahilSh/CSS3" class="github-link"><i class='bx bxl-github'></i></a>
+                            <!-- <a href="https://github.com/Tech-SahilSh/CSS3" class="live-link"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project-card"></div>
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Books4GHR</h3>
+                        <p>Online book store Project using HTML, CSS & JS</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Tech-SahilSh/Booksr4GHR" class="github-link"><i class='bx bxl-github'></i></a>
+                            <a href="https://github.com/Tech-SahilSh/Booksr4GHR" class="live-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class='bx bx-envelope'></i>
+                            <span>sahil.sheikh1978@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-phone'></i>
+                            <span>+91 9359299818</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-links-container">
+        <div class="social-links">
+            <a href="https://linkedin.com//in/sahil-sheikh30" target="_blank" class="social-btn">
+                <i class='bx bxl-linkedin'></i>
+                LinkedIn
+            </a>
+            <a href="https://github.com/Tech-SahilSh" target="_blank" class="social-btn">
+                <i class='bx bxl-github'></i>
+                GitHub
+            </a>
+            <a href="mailto:sahil.sheikh1978@gmail.com?subject=Portfolio Contact" class="social-btn">
+                <i class='bx bx-envelope'></i>
+                Email
+            </a>
+            <a href="tel:+919359299818" class="social-btn">
+                <i class='bx bx-phone'></i>
+                Call
+            </a>
+            <a href="SahilResume.pdf" download class="social-btn download-btn">
+                <i class='bx bx-download'></i>
+                Resume
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sahil Sheikh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
