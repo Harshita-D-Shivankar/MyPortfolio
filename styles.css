@@ -284,13 +284,89 @@ nav {
 }
 
 /* Experience Section */
-.experience-card {
-    background: var(--card-bg);
+/* .experience-container {
+    max-width: 800px;  Same as education and about sections
+    margin: 0 auto;
     padding: 2rem;
-    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+} */
+
+.experience-card {
     max-width: 1200px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 6px var(--shadow);
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    box-shadow: 0 4px 10px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem auto;  
+    max-width: 700px;    */
+}
+
+.experience-card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    /* margin-bottom: 0.04rem; */
+}
+
+.experience-card h4 {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.experience-duration {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* .experience-container {
+        width: 90%;
+        padding: 1rem;
+    } */
+
+    .experience-card {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* .experience-container {
+        width: 95%;
+        padding: 0.5rem;
+    } */
+
+    .experience-card {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .experience-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience-card h4 {
+        font-size: 1rem;
+    }
+
+    .experience-card p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Skills Section */
@@ -815,4 +891,192 @@ body {
 
 .download-btn i {
     font-size: 1.2rem;
+}
+
+/* Hero Text Responsive */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Cards Responsive */
+/* @media (max-width: 480px) {
+    .skill-card,
+    .project-card,
+    .experience-card {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .projects-container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .project-card {
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+} */
+
+/* Contact Section Responsive */
+@media (max-width: 480px) {
+    .contact-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+}
+
+/* Social Links Responsive */
+@media (max-width: 480px) {
+    .social-links {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .social-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* General spacing adjustments for mobile */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+        margin: 2rem 0 1rem;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
+}
+
+/* Update CTA buttons responsive styles */
+@media (max-width: 480px) {
+    .hero {
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .cta-btn {
+        width: 200px;  /* Fixed width for mobile */
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .about-content,
+    .education-timeline,
+    .experience-card,
+    .skills-grid,
+    .projects-container,
+    .contact-container,
+    .social-links-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+}
+
+/* Music Button Styles */
+.nav-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.music-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-btn:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.music-btn.playing {
+    color: var(--primary-color);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
