@@ -315,13 +315,13 @@ nav {
 }
 
 .experience-card h4 {
-    /* color: var(--text-primary); */
+    color: var(--text-primary);
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
 .experience-card p {
-    /* color: var(--text-primary); */
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
     line-height: 1.6;
 }
@@ -350,7 +350,12 @@ nav {
         width: 95%;
         padding: 0.5rem;
     } */
-
+    .experience-card p {
+        color: var(--text-primary);
+    }
+    .experience-card h4 {
+        color: var(--text-primary);
+    }
     .experience-card {
         width: 95%;
         padding: 1rem;
@@ -944,9 +949,9 @@ body {
 } */
 
 /* Contact Section Responsive */
-@media (max-width: 480px) {
+@media ((min-width:200px) and (max-width: 480px)) {
     .contact-container {
-        width: 95%;
+        width: 90%;
         padding: 1rem;
     }
 
