@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
 
 // Typing Animation
 const typingText = document.querySelector('.profession');
-const professions = ['Java Developer Intern', 'Full Stack Developer', 'Problem Solver'];
+const professions = ['Web Developer Intern', 'Full Stack Developer', 'Problem Solver'];
 let professionIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
