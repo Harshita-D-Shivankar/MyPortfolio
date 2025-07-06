@@ -1,5 +1,5 @@
 // Initialize EmailJS
-emailjs.init("aEOTYoXxhnUDNc8KW"); // Replace with your EmailJS public key
+emailjs.init("yDmib_Xb317RwBh8y"); // Replace with your EmailJS public key
 
 // Loading Animation
 window.addEventListener('load', () => {
@@ -135,10 +135,10 @@ contactForm.addEventListener('submit', function(e) {
         name: contactForm.name.value,
         email: contactForm.email.value,
         message: contactForm.message.value,
-        to_email: 'sahil.sheikh1978@gmail.com'
+        to_email: 'harshita.shivankar251102@gmail.com'
     };
 
-    emailjs.send('service_sz42blq', 'template_x3olaqa', templateParams)
+    emailjs.send('service_uwvjmh3', 'template_dk49tcj', templateParams)
         .then(() => {
             submitBtn.textContent = 'Message Sent!';
             contactForm.reset();
