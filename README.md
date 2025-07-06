@@ -3,7 +3,7 @@
 Responsive Personal Portfolio Website
 Developed using HTML, CSS, and JavaScript, this fully responsive portfolio highlights my background, technical skills, and featured projects. The site includes a dynamic contact form integrated with the **EmailJS** API, allowing visitors to easily get in touch with me. It serves as a comprehensive introduction to my work and capabilities in web development.
 
-🚀 **Live Demo:** [https://github.com/Harshita-D-Shivankar/MyPortfolio/](https://github.com/Harshita-D-Shivankar/MyPortfolio)
+🚀 **Live Demo:** [https://harshita-d-shivankar.github.io/MyPortfolio/](https://github.com/Harshita-D-Shivankar/MyPortfolio)
 
 ---
 
